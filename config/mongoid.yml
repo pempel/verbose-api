@@ -1,0 +1,13 @@
+development:
+  clients:
+    default:
+      database: verbose_d
+      hosts:
+        - db:27017
+
+test:
+  clients:
+    default:
+      database: verbose_t
+      hosts:
+        - db:27017

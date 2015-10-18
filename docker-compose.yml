@@ -1,0 +1,11 @@
+app:
+  build: .
+  ports:
+    - "3000:3000"
+  links:
+    - db
+  volumes:
+    - ".:/var/www/verbose-api"
+
+db:
+  image: mongo:3.0.7
