@@ -1,11 +1,12 @@
 app:
-  build: .
+  build: "."
   ports:
     - "3000:3000"
   links:
-    - db
+    - "db"
   volumes:
     - ".:/var/www/verbose-api"
+  env_file: ".env"
 
 db:
-  image: mongo:3.0.7
+  image: "mongo:3.0.7"
