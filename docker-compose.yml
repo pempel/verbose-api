@@ -8,7 +8,7 @@ app:
   volumes:
     - ".:/var/www/verbose-api"
   env_file:
-    - "development.env"
+    - "env.development"
 
 db:
   build: "."
