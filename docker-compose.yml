@@ -1,5 +1,6 @@
 app:
   build: "."
+  dockerfile: "dockerfile.app"
   ports:
     - "3000:3000"
   links:
@@ -10,4 +11,5 @@ app:
     - "development.env"
 
 db:
-  image: "mongo:3.0.7"
+  build: "."
+  dockerfile: "dockerfile.db"
